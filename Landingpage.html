@@ -1,232 +1,457 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAAPG</title>
-    <link rel="stylesheet" href="Landingpage.css">
-    <link rel="icon" type="image/png" href="img/logoaaapg3.png">
-    
-</head>
-<body>
-<div class="cabecalho">
-    <img src="img/logoaaapg.png" alt="logo" class="logo">
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Associação de Animais PG</title>
+        <link rel="stylesheet" href="Landingpage.css">
+        <link rel="icon" type="image/png" href="img/logoaaapg3.png">
+        
+    </head>
+    <body>
+    <div class="cabecalho">
+        <img src="img/logoaaapg.png" alt="logo" class="logo">
 
-    <div class="titulo-e-menu">
-        <nav class="menu">
-            <a href="#inicio">Início</a>
-            <a href="#animais">Animais</a>
-            <a href="#clinica">Clínica</a>
-            <a href="#adote">Adoção</a>
-            <a href="#secao-projeto">Projeto</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="titulo-e-menu">
+            <nav class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#animais">Animais</a>
+                <a href="#carrossel-secao">Sobre Nós</a>
+                <a href="#clinica">Clínica</a>
+                <a href="#cards-conteudo">Doações</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </div>
 
-    <a class="Ajude" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora
-    </a>
-</div>
+    <section id="inicio" class="carrossel-section">
+        <div class="carrossel-texto">
+            <h2>Associação de Amparo aos Animais</h2>
+            <p>A Associação de Amparo aos Animais de Praia Grande é movida por amor, responsabilidade e dedicação. Há anos, resgatamos animais abandonados ou vítimas de maus-tratos, oferecendo tratamento, cuidado, proteção e a chance de um novo começo. Cada vida importa e trabalhamos todos os dias para que mais animais encontrem um lar seguro, cheio de carinho e dignidade.</p>
+        </div>
 
-<section id="inicio" class="carrossel-section">
-    <div class="carrossel-texto">
-        <h2>Associação de Amparo aos Animais</h2>
-        <p>A Associação de Amparo aos Animais de Praia Grande é movida por amor, responsabilidade e dedicação. Há anos, resgatamos animais abandonados ou vítimas de maus-tratos, oferecendo tratamento, cuidado, proteção e a chance de um novo começo. Cada vida importa e trabalhamos todos os dias para que mais animais encontrem um lar seguro, cheio de carinho e dignidade.</p>
-    </div>
+        <div class="carrossel-wrapper">
+            <div class="carrossel">
+                <div class="slides">
+                    <img src="img/imgAssociacao3.jpg" alt="Foto cachorro">
+                    <img src="img/imgAssociacao2.jpg" alt="Foto cachorro">
+                    <img src="img/caramelo.jpg" alt="Foto cachorro">
+                </div>
+            </div>
 
-    <div class="carrossel-wrapper">
-        <div class="carrossel">
-            <div class="slides">
-                <img src="img/imgAssociacao3.jpg" alt="Foto cachorro">
-                <img src="img/imgAssociacao2.jpg" alt="Foto cachorro">
-                <img src="img/caramelo.jpg" alt="Foto cachorro">
+            <div class="paginacao" id="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
         </div>
+    </section>
 
-        <div class="paginacao" id="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
-</section>
+    <br>
 
-<br>
+    <hr class="laranja">
+    <br><br><h1>Conheça nossos pets</h1><br>
+    <div class="grupo-inline" id="animais">
 
-<hr class="laranja">
-<br><br>
-<h1> Conheça nossos pets</h1><br>
-<div class="grupo-inline" id="animais">
-  
-
+    <!-- Pet 1 -->
     <div>
         <img class="pet-foto-adote" src="img/cachorrofofo1.jpg" alt="cachorrinho">
         <p>Tobby</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Macho</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="tobby">Ver Mais</button>
     </div>
+
+    <!-- Modal Tobby -->
+    <div class="modal" id="modal-tobby">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tobby</h2>
+            
+            <p>Oi, pessoal! Eu sou o Tobby! 🐾💙
+                
+                Sou um cachorrinho de porte médio para pequeno, muito bonzinho, alegre e cheio de carinho para dar. Sou daquele tipo que conquista todo mundo com o meu jeitinho amigável e leal! 😄
+                
+                Me dou bem com outros animais e nunca demonstrei sinais de agressividade. Sou um carinha tranquilo, sempre disposto a espalhar boas energias por onde passo. 🥰</p>
+        </div>
+    </div>
+
+    <!-- Pet 2 -->
     <div>
         <img class="pet-foto-adote" src="img/fofura.jpg" alt="cachorrinho">
         <p>Tereza</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Fêmea</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="tereza">Ver Mais</button>
     </div>
+
+    <!-- Modal Tereza -->
+    <div class="modal" id="modal-tereza">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tereza</h2>
+            <p>Oi, pessoal! Eu sou a Tereza Luiza! 💕🐾
+            
+            Cheguei na Associação há pouco tempo e, no começo, confesso que estava um pouco desconfiada… Afinal, tudo era novidade para mim. Mas, com o tempo, percebi que aqui só tem gente boa que quer o meu bem, e agora já estou adaptada e pronta para encontrar um lar de verdade. 🏡✨
+            
+            Sou uma cachorrinha muito amorosa e só quero uma família que me dê carinho e a chance de retribuir com todo o meu amor. ❤️/p>
+        </div>
+    </div>
+
+    <!-- Pet 3 -->
     <div>
         <img class="pet-foto-adote" src="img/suely.jpg" alt="cachorrinho">
         <p>Suely</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Fêmea</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="suely">Ver Mais</button>
     </div>
+
+    <!-- Modal Suely -->
+    <div class="modal" id="modal-suely">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Suely</h2>
+            <p>Ei, pessoal! Eu sou a Sueli. 🐾💛
+ 
+                Eu sou uma cachorrinha tranquila, meiga e cheia de amor para dar. Não faz muito tempo que cheguei na Associação e quero muito escrever um novo capítulo da minha vida ao lado de uma família especial. 🏡✨
+                
+                Sou boazinha e carinhosa , uma companheira perfeita para quem procura um amor verdadeiro em forma de cachorro. Meu jeitinho tranquilo conquista todos que passam por mim, e estou aqui esperando por alguém que queira compartilhar a vida comigo.</p>
+        </div>
+    </div>
+
+    <!-- Pet 4 -->
     <div>
         <img class="pet-foto-adote" src="img/gatinho12.jpg" alt="gatinho">
         <p>Margot</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Fêmea</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="margot">Ver Mais</button>
     </div>
-     <div>
+
+    <!-- Modal Margot -->
+    <div class="modal" id="modal-margot">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Margot</h2>
+            <p>Pessoal, eu sou a Margot.🐱
+                
+                Fui resgatada e cheguei prenha aqui na Associação.
+                
+                Meus filhos são o Stuart e o Little, nasceram aqui no abrigo e nunca souberam como é ser “livre”..
+                
+                Ja se passaram mais de 1 ano e ainda não conseguimos encontrar um lar.🥺</p>
+        </div>
+    </div>
+
+    <!-- Pet 5 -->
+    <div>
         <img class="pet-foto-adote" src="img/natalina.jpg" alt="gatinho">
         <p>Natalina</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Fêmea</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="natalina">Ver Mais</button>
     </div>
-     <div>
+
+    <!-- Modal Natalina -->
+    <div class="modal" id="modal-natalina">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Natalina</h2>
+            <p>Afetuosa, gentil e sensível, a Natalina só deseja um cantinho seguro onde possa finalmente relaxar e receber o amor que merece.</p>
+        </div>
+    </div>
+
+    <!-- Pet 6 -->
+    <div>
         <img class="pet-foto-adote" src="img/stuart.jpg" alt="gatinho">
         <p>Stuart</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Macho</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="stuart">Ver Mais</button>
     </div>
-     <div>
+
+    <!-- Modal Stuart -->
+    <div class="modal" id="modal-stuart">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Stuart</h2>
+            <p class="fm">Macho</p>
+            <p>Oi pessoal, meu é Stuart!
+            Sou muito mansinho, bonzinho e carinhoso.
+            Adoro colo e cafuné.
+            Sou FIV e FELV positivo, que não é transmissível para humanos, apenas para outros gatinhos. Então, se eu for filho único e você cuidar de mim com atenção e carinho, mantendo meu sistema imunológico fortalecido, eu posso viver uma vida muito feliz!</p>
+        </div>
+    </div>
+
+    <!-- Pet 7 -->
+    <div>
         <img class="pet-foto-adote" src="img/monique.jpg" alt="gatinho">
         <p>Monique</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Fêmea</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="monique">Ver Mais</button>
     </div>
+
+    <!-- Modal Monique -->
+    <div class="modal" id="modal-monique">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Monique</h2>
+            <p>Doce, tranquila e muito carinhosa, a Monique é perfeita para quem busca uma companheira calma e cheia de afeto no dia a dia.</p>
+        </div>
+    </div>
+
+    <!-- Pet 8 -->
     <div>
         <img class="pet-foto-adote" src="img/babaloo.jpg" alt="gatinho">
         <p>Babaloo</p>
-        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">
-        Adote agora</a>
+        <p class="fm">Fêmea</p>
+        <a class="adote" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Adote agora</a>
+        <button class="ver-mais" data-animal="babaloo">Ver Mais</button>
     </div>
-    
-</div>
 
-
-
-<h2 id="clinica">Clínica Veterinária destinada aos Pets</h2>
-<p>Serviços de alta qualidade para o seu pet, garantindo que mais animais de rua tenham a chance de um futuro</p>
-<img class="veterinariocachorro" src="img/veterinariodog.png">
-
-<h2>Pronto para Mudar uma Vida?</h2>
-<p> Conheça Nossos Pets em Busca de um Lar </p>
-
-<br>
-
-
-<hr class="laranja">
-
-<h2 >Por que Adotar?</h2>
-
-<div class="grupo-inline">
-    <div><br>
-        <img class="curso" src="img/cachorropreto.jpg" alt="cachorro">
-        <p class="texto">Bem-estar e segurança</p>
+    <!-- Modal Babaloo -->
+    <div class="modal" id="modal-babaloo">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Babaloo</h2>
+            
+            <p>Brincalhona, amorosa e cheia de energia, a Babaloo sonha em encontrar um lar onde possa distribuir todo o carinho que guarda no coração.</p>
+        </div>
     </div>
-    <div><br>
-        <img class="curso" src="img/cachorrolaranja.jpg" alt="cachorro">
-        <p class="texto">Recomeços dignos</p>
+
     </div>
-    <div><br>
-        <img class="curso" src="img/cachorrobege.jpg" alt="cachorro">
-        <p class="texto">Luta pela<br>adoção responsável</p>
-    </div>
-</div>
 
-<hr class="laranja">
 
-<div id="secao-projeto" style="padding: 20px;">
-    <h2>Um pouco sobre o projeto...</h2>
-   
-   <p>A AAAPG, de Praia Grande, dedica-se a resgatar animais abandonados ou maltratados, <br>
-    oferecendo atendimento veterinário, tratamento e castração. <br>
-    Depois de recuperados, eles são encaminhados para adoções responsáveis, <br>
-    garantindo que cada bichinho encontre um lar seguro, amoroso e cheio de cuidado.<br>
-    É um trabalho essencial para dar a esses animais a chance de recomeçar com dignidade.</p>
-   
-</div>
-
-<hr class="laranja">
-
-<h1 class="venha"> Venha fazer parte dessa história!</h1>
-
-<footer id="contato">
-
-    <div>
+    <section id="carrossel-secao">
+    <div class="slides-container2">
+        <div class="slide-projeto ativo">
+        <div class="imagem">
+            <img src="img/padrinho.jfif" alt="Seja um Padrinho">
+        </div>
+        <div class="texto">
         
-        <div class="footer-contato">
-            <h3>Contato</h3>
-            <p>E-mail: <a href="email:atendimento.aaapg@gmail.com">atendimento.aaapg@gmail.com</a></p>
-            <p>Tel: (13) 3479-2288</p>
+            <h2>Seja um Padrinho</h2>
+            <p>Seja um Padrinho: Pequenas Ações, Grandes Mudanças</p>
+            <p>Quem deseja ajudar, mas não pode adotar, pode participar do programa de apadrinhamento. Padrinhos e madrinhas contribuem com   carinho, passeios, petiscos, cuidados no petshop e pequenas necessidades diárias dos animais.
+            <br><br>    Essa rede de afeto torna o dia a dia dos pets mais feliz, reforça sua socialização e apoia sua preparação para uma adoção responsável.</p>
+            <a href="https://bit.ly/queroservoluntariodaaaapg" target="_blank" class="botao">Saiba Mais</a>
+        </div>
         </div>
 
-        <div class="footer-endereco">
-            <h3>Endereço</h3>
-            <p> Avenida Lasar Segall, 388</p>
-            <p>Jardim Samambaia - Praia Grande, São Paulo</p>
-            <p>CNPJ: 55.672.166/0001-46</p>
+        <div class="slide-projeto">
+        <div class="imagem">
+            <img src="img/voluntario.jfif" alt="Voluntariado">
+        </div>
+        <div class="texto">
+            <h2>Voluntariado</h2>
+            <p>Embora não receba apoio financeiro governamental, a associação é mantida graças ao amor de pessoas dispostas a ajudar. Hoje, mais de 200 voluntários dedicam tempo e carinho aos animais, oferecendo atenção, limpeza, passeio, alimentação e muito afeto.</p>
+            <p>Ser voluntário é transformar vidas com gestos simples. Você também pode fazer parte dessa corrente de amor e ajudar a deixar o dia de um animal mais feliz.</p>
+            <a href="https://bit.ly/queroservoluntariodaaaapg" target="_blank" class="botao">Cadastre-se</a>
+        </div>
         </div>
 
-        <div class="footer-social-e-gatinho">
-            <div class="redes-sociais">
-                <a href="https://www.instagram.com/aaapgoficial/" aria-label="Instagram" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/aaapgoficial/" aria-label="Facebook" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-                <a id="zap" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank"><img src="img/whatsapp.png"></a>
-              </div>
-          
+        <div class="slide-projeto">
+        <div class="imagem">
+            <img src="img/feiraadocao.jfif" alt="Eventos Beneficentes">
         </div>
-
+        <div class="texto">
+            <h2>Eventos Beneficentes</h2>
+            <p>A Associação de Amparo aos Animais de Praia Grande realiza diversos eventos beneficentes ao longo do ano, que têm como propósito arrecadar recursos, promover a conscientização e aproximar a comunidade da causa animal. Entre as ações mais tradicionais, destacam-se a Noite Italiana, as Feiras de Adoção e os encontros educativos sobre guarda responsável.</p>
+            <p>Cada evento é uma oportunidade de conectar pessoas que amam os animais e desejam contribuir para um futuro melhor para eles. Toda participação faz diferença juntos, conseguimos salvar vidas.</p>
+            <a href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank" class="botao">Saiba Mais</a>
+        </div>
+        </div>
     </div>
 
-    <hr>
-
-    <div>
-        <p>© 2025 Associação de Amparo aos Animais. Todos os direitos reservados.</p>
+    <div class="carrossel-controles">
+        <button id="prev">‹</button>
+        <button id="next">›</button>
     </div>
-</footer>
-</body>
-</html>
-<script>
-  const slidesContainer = document.querySelector('.slides');
-  const dots = document.querySelectorAll('.dot');
-  const slideImages = document.querySelectorAll('.slides img');
-  let index = 0;
+    </section>
 
-  function getSlideWidth() {
-    const carrossel = document.querySelector('.carrossel');
-    return Math.round(carrossel.clientWidth);
-  }
 
-  function showSlide(i) {
-    const w = getSlideWidth();
-    slidesContainer.style.transform = `translateX(-${i * w}px)`;
-    dots.forEach(dot => dot.classList.remove('active'));
-    if (dots[i]) dots[i].classList.add('active');
-  }
+    <section id="clinica" class="secao-conteudo">
+    <div class="imagem">
+        <img src="img/veterinariodog.png" alt="Clínica Veterinária Parceira">
+    </div>
+    <div class="texto">
+        <h2>Clínica Parceira: Cuidado Acessível Que Gera Esperança</h2>
+        <p>
+        A associação é vinculada a uma clínica veterinária parceira que oferece serviços com preços acessíveis à população. Todos os valores arrecadados são integralmente revertidos em cuidados, alimentação e tratamentos para os animais acolhidos.
+        </p>
+        <p>
+        Essa parceria garante que cada tratamento realizado representa não apenas o cuidado de um animal, mas também um passo importante para manter a associação funcionando e acolhendo novos resgates.
+        </p>
+        <a class="botao" aria-label="Chat no WhatsApp" href="https://api.whatsapp.com/send/?phone=5513997677234&text&type=phone_number&app_absent=0" target="_blank">
+            Entre em contato com a Clínica</a>
+        </section>
+    
+    <section id="cards-conteudo" class="cards-conteudo">
+    <div class="card">
+        <img src="img/doacao.jpg" alt="Doações">
+        <h3>Doações: Cada Contribuição Alimenta a Esperança</h3>
+        <p>
+        A associação aceita doações de ração, medicamentos, tapetes higiênicos, produtos de limpeza, brinquedos e itens de cuidado animal. Cada pacote, cada item e cada gesto faz diferença no dia a dia dos animais que aguardam por um lar.
+        </p>
+        <p>
+        Sua doação ajuda a manter a alimentação, o conforto e a saúde dos pets que dependem da proteção da ONG.
+        </p>
+        <p class="chave">CHAVE PIX</p>
+        <p class="pix"> amparoanimalpg@gmail.com </p>
+    </div>
 
-  function nextSlide() {
-    index = (index + 1) % slideImages.length;
-    showSlide(index);
-  }
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
-      index = i;
-      showSlide(i);
+    <div class="card">
+        <img src="img/ambiente.jfif" alt="Cuidado Ambiental">
+        <h3>Cuidado e Responsabilidade Ambiental</h3>
+        <p>
+        O descarte de materiais médicos e resíduos, como seringas, é realizado de maneira adequada e segura, seguindo todas as normas de biossegurança. 
+        </p>
+        <p>
+        Essa prática reforça o compromisso da associação não apenas com os animais, mas também com a saúde pública e o meio ambiente.
+        </p>
+    </div>
+
+    <div class="card">
+        <img class="imgadocao" src="img/adocaook.jpg" alt="Processo de Adoção">
+        <h3>Processo de Adoção: Amor Com Responsabilidade</h3>
+        <p>
+        A adoção é realizada com muito cuidado e responsabilidade. Cada interessado passa por etapas de avaliação, conversa orientativa e visitas periódicas, garantindo que o animal esteja adaptado, seguro e bem cuidado no novo lar.
+        </p>
+        <p>
+        Nós acreditamos que adoção é um compromisso de vida e por isso acompanhamos de perto cada etapa, sempre pensando no bem-estar do animal.
+        </p>
+        <a class="botao" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank">Fale Conosco</a>
+    </div>
+    </section>
+
+
+    <footer id="contato">
+
+        <div>
+            
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <p>✉ E-mail: <a href="email:atendimento.aaapg@gmail.com">atendimento.aaapg@gmail.com</a></p>
+                <p>tel: (13) 3479-2288</p>
+                <p>tel: (13) 99615-1312</p>
+            </div>
+
+            <div class="footer-endereco">
+                <h3>Endereço</h3>
+                <p> Avenida Lasar Segall, 388</p>
+                <p>Jardim Samambaia - Praia Grande, São Paulo</p>
+                <p>CNPJ: 55.672.166/0001-46</p>
+            </div>
+
+            <div class="footer-social-e-gatinho">
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/aaapgoficial/" aria-label="Instagram" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/aaapgoficial/" aria-label="Facebook" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a id="zap" aria-label="Chat no WhatsApp" href="https://wa.me/13996151312?text=Olá!%20Gostaria%20de%20adotar%20um%20pet.%20Pode%20me%20ajudar?" target="_blank"><img src="img/whatsapp.png"></a>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div>
+            <p>© 2025 Associação de Amparo aos Animais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    </body>
+    <script>
+        
+    const slidesContainer = document.querySelector('.slides');
+    const dots = document.querySelectorAll('.dot');
+    const slideImages = document.querySelectorAll('.slides img');
+    let index = 0;
+
+    function getSlideWidth() {
+        const carrossel = document.querySelector('.carrossel');
+        return Math.round(carrossel.clientWidth);
+    }
+
+    function showSlide(i) {
+        const w = getSlideWidth();
+        slidesContainer.style.transform = `translateX(-${i * w}px)`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[i]) dots[i].classList.add('active');
+    }
+
+    function nextSlide() {
+        index = (index + 1) % slideImages.length;
+        showSlide(index);
+    }
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+        index = i;
+        showSlide(i);
+        });
     });
-  });
 
-  window.addEventListener('resize', () => {
-    showSlide(index);
-  });
+    window.addEventListener('resize', () => {
+        showSlide(index);
+    });
 
-  showSlide(0);
-  const interval = setInterval(nextSlide, 4000);
-</script>
+    showSlide(0);
+    const interval = setInterval(nextSlide, 4000);
+
+
+    const slidesContainer2 = document.querySelector('.slides-container2');
+    const slides2 = document.querySelectorAll('.slide-projeto');
+    const prevBtn2 = document.getElementById('prev');
+    const nextBtn2 = document.getElementById('next');
+
+    let index2 = 0;
+
+    function showSlide2(i) {
+    index2 = (i + slides2.length) % slides2.length;
+    slidesContainer2.style.transform = `translateX(-${index2 * 100}%)`;
+    }
+
+    prevBtn2.addEventListener('click', () => {
+    showSlide2(index2 - 1);
+    });
+
+    nextBtn2.addEventListener('click', () => {
+    showSlide2(index2 + 1);
+    });
+
+    setInterval(() => {
+    showSlide2(index2 + 1);
+    }, 8000); 
+
+    const botoesVerMais = document.querySelectorAll(".ver-mais");
+    const modais = document.querySelectorAll(".modal");
+    const botoesFechar = document.querySelectorAll(".modal .close");
+
+    // abrir modal----------
+    botoesVerMais.forEach(botao => {
+    botao.addEventListener("click", () => {
+        const animal = botao.dataset.animal;
+        const modal = document.getElementById(`modal-${animal}`);
+        if(modal) modal.style.display = "flex";
+    });
+    });
+
+    // fechar ao clicar no X-----------
+    botoesFechar.forEach(botao => {
+    botao.addEventListener("click", () => {
+        const modal = botao.closest(".modal");
+        modal.style.display = "none";
+    });
+    });
+
+    // fechar clicando fora do conteúdo----------
+    modais.forEach(modal => {
+    modal.addEventListener("click", e => {
+        if(e.target === modal) modal.style.display = "none";
+    });
+    });
+modais.forEach(modal => modal.style.display = "none");
+    </script>
+    </html>
